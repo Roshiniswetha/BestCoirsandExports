@@ -1,0 +1,33 @@
+.post_list {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 55px;
+    column-gap: 60px;
+    justify-content: center;
+    margin-bottom: 3%;
+  }
+  .post {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+.coir_image{
+    height: 260px;
+}
+.coir_card{
+    max-width:600px;
+}
+
+.main_content{
+    margin-top: 70px
+}
+
+.main_botton_content{
+  margin: 200px;
+  margin-bottom: 0px;
+}
+  

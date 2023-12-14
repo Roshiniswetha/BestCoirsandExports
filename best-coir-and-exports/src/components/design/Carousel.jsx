@@ -1,41 +1,35 @@
 import { Carousel } from 'react-carousel-minimal';
-import CocoBlock from "../../assets/images/cocopeat-block.jpg";
-import Cocos from "../../assets/images/cocos.jpg";
-import Pieces from "../../assets/images/pieces.jpg";
-import PeatMachine from "../../assets/images/peat-machine.jpg";
-import CocoPeatSealed from "../../assets/images/cocopeat-sealed.jpg";
-import CoirFibre from "../../assets/images/coir-fibre.jpg";
-import CocoPowder from "../../assets/images/Coco-powder.jpg";
+import { CoconutField, CocoBg, Pieces, GrowBags, CoirBlocks, HangingCoir, CoirFarm, Coconut} from '../../assets/images';
 
 export default function Carousell() {
  const data = [
     {
-      image: `${CocoBlock}`,
-      caption: "Coco Peat Block"
+      image: `${CoconutField}`,
+      caption: "Coco Farm"
     },
     {
-      image: `${Cocos}`,
-      caption: "Coco"
+      image: `${Coconut}`,
+      caption: "Coconut"
     },
     {
       image: `${Pieces}`,
-      caption: "Coco Peat Compost"
+      caption: "Coir Blocks"
     },
     {
-      image: `${PeatMachine}`,
-      caption: "Peat Machine"
+      image: `${GrowBags}`,
+      caption: "Grow Bags"
     },
     {
-      image: `${CocoPeatSealed}`,
-      caption: "Coco Peat Sealed"
+      image: `${CoirBlocks}`,
+      caption: "Coir Blocks"
     },
     {
-      image: `${CoirFibre}`,
+      image: `${HangingCoir}`,
       caption: "Coir Fibre"
     },
     {
-      image: `${CocoPowder}`,
-      caption: "Coco Powder"
+      image: `${CoirFarm}`,
+      caption: "Coco Processing"
     },
   ];
 

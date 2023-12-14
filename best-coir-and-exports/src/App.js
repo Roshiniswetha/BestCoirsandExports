@@ -1,7 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from "./components/design/Navbar";
+import Header from "./components/design/Header";
 import Footer from "./components/design/Footer";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
 import Box from "@mui/material/Box";
 
 import Home from './components/Home'
@@ -9,24 +11,31 @@ import About from './components/About'
 import ItemsList from "./components/design/ItemsList";
 import Contact from "./components/Contact"
 import Enquire from './components/Enquire'
-import Card from "./data/db.json";
-import Image from './assets/images/coco-bg3.jpg';
-import "./App.css";
+import Process from './components/Process'
+import {CoirProducts} from "./data/db"
+
+import GlobalStyles from '@mui/material/GlobalStyles';
+import {theme} from './theme'
+import './assets/styles/styles.scss'
 
 const sections = [
   { title: 'Home', url: '/' },
   { title: 'About', url: '/about' },
-  { title: 'Products', url: '/coir' },
+  { title: 'Process', url: '/process' },
+  { title: 'Products', url: '/product' },
   { title: 'Enquire', url: '/enquire' },
   { title: 'Contact', url: '/contact' },
 ];
+// const inputGlobalStyles = <GlobalStyles styles={{root:{fontFamily:'Open Sans'}}}/>;
 
 function App() {
-  const data = Card;
+  const data = CoirProducts;
   return (
+    <ThemeProvider theme={theme}>
   <BrowserRouter>
+   {/* {inputGlobalStyles} */}
     <React.Fragment>
-      <Navbar sections={sections}/>
+      <Header sections={sections}/>
       <Box
         className="app"
       >
@@ -35,7 +44,9 @@ function App() {
 
         <Route path="/about" element={<About data={data}/>} />
 
-        <Route path="/coir" element={<ItemsList data={data} />} />
+        <Route path="/product" element={<ItemsList data={data} />} />
+
+        <Route path="/process" element={<Process data={data} />} />
 
         <Route path="/enquire" element={<Enquire />} />
 
@@ -46,6 +57,7 @@ function App() {
       <Footer />
     </React.Fragment>
   </BrowserRouter>
+  // </ThemeProvider>
   );
 }
 

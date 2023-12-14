@@ -1,0 +1,34 @@
+// .footer {
+//     font-size: 16px;
+//     width: 100%;
+//     height: auto;
+//     padding-top: 30px;
+//     position: sticky;
+//     text-align: center;
+//     bottom: 0;
+//     left: 0;
+//     background-color: gray;
+//     color: white;
+//   }
+footer {
+    margin-top: 100px;
+    padding-bottom: 20px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    color: '#83764F';
+    font-size: 14px;
+    text-align: center;
+    padding: 32px;
+    background: '#83764F';
+    strong {
+      color: '#83764F';
+    }
+    .footer-links {
+      margin-bottom: 24px;
+      a {
+        margin: 0 8px;
+        color: '#83764F';
+      }
+    }
+  }
+  

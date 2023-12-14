@@ -15,10 +15,10 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
       {new Date().getFullYear()}
+      <Link color="inherit" href="https://mui.com/">
+         Best Coir and Exports
+      </Link>{' '}
       {'.'}
     </Typography>
   );
@@ -30,6 +30,7 @@ export default function Enquire() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    window.location.href = 'mailto:contact@swetharavindran24@gmail.com?subject=Hello&body=Hi%20there!';
   };
 
   return (
@@ -112,7 +113,7 @@ export default function Enquire() {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Send Messagee
+              Send Message
             </Button>
           </Box>
         </Box>

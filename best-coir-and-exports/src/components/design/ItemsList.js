@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography";
 import Export from "../products/Export";
 import Coir from "../products/Coir";
 import Image from "../../assets/images/background.svg";
-import "./ItemsList.css";
 
 const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
@@ -36,7 +35,7 @@ const ItemsList = ({ data }) => {
       <div className="news_title">
         <h1 className="h1_gray">
           Best Coir<>&nbsp;</>
-          <span className="span_blue">and Exports</span>
+          <span className="span_green">and Exports</span>
         </h1>
       </div>
       <Box

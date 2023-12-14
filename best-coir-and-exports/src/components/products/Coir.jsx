@@ -3,27 +3,26 @@ import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import "./Coir.css";
 
 const Coir = ({ coirs }) => {
   const CoirCard = coirs.map((coir) => {
     return (
       <Card
         sx={{
-          maxWidth: "400px",
+          maxWidth: "600px",
           background: "#fff 0% 0% no-repeat padding-box",
         }}
-        className="Coir"
+        className="coir_card"
         key={coir.id}
         raised={true}
       >
         <CardMedia
-          style={{ height: 'auto' }}
+          className='coir_image'
+          style={{ height: '400px' }}
           component="img"
-          height="140px"
-          image={require('../../assets/images/grow-bags.jpg')}
+          image={coir.image}
           alt={coir.title}
-          src={coir.imgUrl}
+          src={coir.image}
         />
         <CardHeader title={coir.title} component="h3"></CardHeader>
         <CardContent component="p">{coir.content}</CardContent>

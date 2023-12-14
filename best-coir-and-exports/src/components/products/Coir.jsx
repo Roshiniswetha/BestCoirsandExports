@@ -3,9 +3,10 @@ import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
+import {CoirProducts} from "../../data/db"
 
-const Coir = ({ coirs }) => {
-  const CoirCard = coirs.map((coir) => {
+const Coir = () => {
+  const CoirCard = CoirProducts.map((coir) => {
     return (
       <Card
         sx={{

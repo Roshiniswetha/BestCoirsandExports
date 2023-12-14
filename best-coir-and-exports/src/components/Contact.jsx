@@ -9,7 +9,6 @@ import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import MailIcon from '@mui/icons-material/Mail';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import './Contact.scss'
 
 function Contact() {
   return (
@@ -34,7 +33,7 @@ function Contact() {
                 <ContactPhoneIcon />
               </Avatar>
             </ListItemAvatar>
-            <Typography>Phone: +8056527773</Typography>
+            <Typography>Phone: +9865428094</Typography>
           </ListItem>
           <ListItem>
             <ListItemAvatar>

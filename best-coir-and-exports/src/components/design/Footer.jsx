@@ -6,7 +6,7 @@ const Footer = () => (
     <div>
       {/* <a href='bestcoirsandexports@gmail.com'>bestcoirsandexports@gmail.com</a> */}
       <p className="footer-links">
-      <a href="https://github.com/Roshiniswetha/healthy-basket-frontend" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/Roshiniswetha/BestCoirsandExports" target="_blank" rel="noopener noreferrer">
           View Source on Github
         </a>
         <span> / </span>
@@ -18,6 +18,9 @@ const Footer = () => (
           Say Hi on Twitter
         </a>
         <span> / </span>
+        <a href="https://www.linkedin.com/in/roshini-swetha-r/" target="_blank" rel="noopener noreferrer">
+          Let's Connect on LinkedIn
+        </a>
       </p>
       <p>
         &copy; {currentYear} <strong>Best Coir and Exports</strong>

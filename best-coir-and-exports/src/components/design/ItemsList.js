@@ -24,8 +24,6 @@ const TabPanel = (props) => {
 };
 
 const ItemsList = ({ data }) => {
-  const exports = data.exports;
-  const coirs = data.coirs;
   const [value, setValue] = React.useState(0);
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -65,10 +63,10 @@ const ItemsList = ({ data }) => {
           </Tabs>
         </Box>
         <TabPanel value={value} index={0}>
-          <Coir coirs={coirs} />
+          <Coir />
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <Export exports={exports} />
+          <Export />
         </TabPanel>
       </Box>
     </React.Fragment>

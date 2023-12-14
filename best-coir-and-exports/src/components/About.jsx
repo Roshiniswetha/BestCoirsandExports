@@ -17,18 +17,11 @@ export default function About({ data }) {
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
-            {/* {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post} />
-            ))} */}
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
           </Grid>
         </main>
       </Container>
-      {/* <Footer
-        title="Footer"
-        description="Something here to give the footer a purpose!"
-      /> */}
     </ThemeProvider>
   );
 });

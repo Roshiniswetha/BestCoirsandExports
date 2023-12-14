@@ -12,7 +12,7 @@ import ItemsList from "./components/design/ItemsList";
 import Contact from "./components/Contact"
 import Enquire from './components/Enquire'
 import Process from './components/Process'
-import {CoirProducts} from "./data/db"
+import {CoirProducts, mainFeaturedPost} from "./data/db"
 
 import GlobalStyles from '@mui/material/GlobalStyles';
 import {theme} from './theme'
@@ -29,7 +29,8 @@ const sections = [
 // const inputGlobalStyles = <GlobalStyles styles={{root:{fontFamily:'Open Sans'}}}/>;
 
 function App() {
-  const data = CoirProducts;
+  const Coir = CoirProducts;
+  const mainPosts = mainFeaturedPost;
   return (
     <ThemeProvider theme={theme}>
   <BrowserRouter>
@@ -42,11 +43,11 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home/>} />
 
-        <Route path="/about" element={<About data={data}/>} />
+        <Route path="/about" element={<About data={Coir}/>} />
 
-        <Route path="/product" element={<ItemsList data={data} />} />
+        <Route path="/product" element={<ItemsList data={mainPosts} />} />
 
-        <Route path="/process" element={<Process data={data} />} />
+        <Route path="/process" element={<Process />} />
 
         <Route path="/enquire" element={<Enquire />} />
 

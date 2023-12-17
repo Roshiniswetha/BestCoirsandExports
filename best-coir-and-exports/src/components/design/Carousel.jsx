@@ -1,16 +1,23 @@
-import { Carousel } from 'react-carousel-minimal';
+// import { Carousel } from 'react-carousel-minimal';
+import { Carousel, Image } from "antd";
 import { CoconutField, CocoBg, Pieces, GrowBags, CoirBlocks, HangingCoir, CoirFarm, Coconut} from '../../assets/images';
 
-export default function Carousell() {
- const data = [
+const imageStyle = {
+  flex: 1,
+  width: '100%',
+  height: '100%',
+  resizeMode: 'center',
+  }
+
+  const carouselData = [
     {
       image: `${CoconutField}`,
       caption: "Coco Farm"
     },
-    {
-      image: `${Coconut}`,
-      caption: "Coconut"
-    },
+    // {
+    //   image: `${Coconut}`,
+    //   caption: "Coconut"
+    // },
     {
       image: `${Pieces}`,
       caption: "Coir Blocks"
@@ -23,15 +30,17 @@ export default function Carousell() {
       image: `${CoirBlocks}`,
       caption: "Coir Blocks"
     },
-    {
-      image: `${HangingCoir}`,
-      caption: "Coir Fibre"
-    },
+    // {
+    //   image: `${HangingCoir}`,
+    //   caption: "Coir Fibre"
+    // },
     {
       image: `${CoirFarm}`,
       caption: "Coco Processing"
     },
   ];
+  
+export default function Carousell() {
 
   const captionStyle = {
     fontSize: '2em',
@@ -47,7 +56,19 @@ export default function Carousell() {
         <div style={{
           padding: "0 20px"
         }}>
-          <Carousel
+          <Carousel autoplay >
+        {carouselData.map((data) => (
+          <div>
+            <div>
+            <Image
+              style={imageStyle}
+              src={data.image}
+            />
+            </div>
+          </div>
+        ))}
+      </Carousel>
+          {/* <Carousel
             data={data}
             time={2000}
             width="850px"
@@ -71,7 +92,7 @@ export default function Carousell() {
               maxHeight: "500px",
               margin: "40px auto",
             }}
-          />
+          /> */}
         </div>
       </div>
     </div>

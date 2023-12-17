@@ -1,16 +1,36 @@
-* {
-    font-family: 'Grandslang roman', sans-serif;
-  }
+// *{
+//     color: #707070;
+//   }
 
-a{
-    text-decoration: none;
-    color: blue;
-}
+    a{
+      text-decoration: none;
+      color: #17781c;
+  }
 
 .MuiCardMedia-root .MuiCardMedia-media .MuiCardMedia-img{
     height: 250px;
 }
 
-body .MuiButton-root {
-    font-family: 'Montserrat', sans-serif;
+.MuiTypography-root {
+    h5{
+      color: #707070;
+    }
+    h3{
+      color: #17781c;
+    }
+    p{
+      color: #707070;
+    }
+  }
+  .Mui-selected{
+    color: #17781c;
+  }
+  .MuiTabs-indicator{
+    color: #17781c;
+  }
+
+  .main_container{
+    // background-image: linear-gradient(291deg,#fffafa 74%,#fafafa 0%);
+    width: 100%;
+    height: 100%;
   }

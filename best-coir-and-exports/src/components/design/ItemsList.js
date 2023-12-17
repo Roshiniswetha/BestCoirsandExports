@@ -42,6 +42,7 @@ const ItemsList = ({ data }) => {
           display: "grid",
           width: "100%",
           background: `url(${Image})`,
+          // backgroundImage: 'linear-gradient(102deg #ffffff 0%, #c8f8b2 74%)',
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center bottom",
           backgroundAttachment: "scroll",

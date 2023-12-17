@@ -16,7 +16,7 @@ function Process() {
                     style={{ width: '40%', height: 'auto' }}
                     />
                 <div style={{ flex: 1, padding: '36px' }}>
-                    <Typography variant="h5" component="div">
+                    <Typography variant="h3" component="div">
                     1. RAW MATERIAL
                     </Typography>
                     <Typography variant="body1" component="div">
@@ -26,7 +26,7 @@ function Process() {
           </Paper>
           <Paper style={{ display: 'flex', marginTop: '40px' }} elevation={0}>
             <div style={{ flex: 1, padding: '36px' }}>
-                    <Typography variant="h5" component="div">         
+                    <Typography variant="h3" component="div">         
                     2. CRUSHING
                     </Typography>
                     <Typography variant="body1" component="div">
@@ -47,7 +47,7 @@ function Process() {
                     style={{ width: '40%', height: 'auto' }}
                     />
                 <div style={{ flex: 1, padding: '36px' }}>
-                    <Typography variant="h5" component="div">
+                    <Typography variant="h3" component="div">
                     3. PITH EXTRACTION
                     </Typography>
                     <Typography variant="body1" component="div">
@@ -57,7 +57,7 @@ function Process() {
           </Paper>
           <Paper style={{ display: 'flex', marginTop: '40px' }} elevation={0}>
             <div style={{ flex: 1, padding: '36px' }}>
-                    <Typography variant="h5" component="div">         
+                    <Typography variant="h3" component="div">         
                     4. SCREENING
                     </Typography>
                     <Typography variant="body1" component="div">
@@ -78,7 +78,7 @@ function Process() {
                     style={{ width: '40%', height: 'auto' }}
                     />
                 <div style={{ flex: 1, padding: '36px' }}>
-                    <Typography variant="h5" component="div">
+                    <Typography variant="h3" component="div">
                     5. WASHING
                     </Typography>
                     <Typography variant="body1" component="div">
@@ -88,7 +88,7 @@ function Process() {
           </Paper>
           <Paper style={{ display: 'flex', marginTop: '40px' }} elevation={0}>
                 <div style={{ flex: 1, padding: '36px' }}>
-                    <Typography variant="h5" component="div">
+                    <Typography variant="h3" component="div">
                     6. DRYING
                     </Typography>
                     <Typography variant="body1" component="div">
@@ -108,7 +108,7 @@ function Process() {
                     style={{ width: '40%', height: 'auto' }}
                     />
                 <div style={{ flex: 1, padding: '36px' }}>
-                    <Typography variant="h5" component="div">
+                    <Typography variant="h3" component="div">
                     7. COMPRESSING
                     </Typography>
                     <Typography variant="body1" component="div">
@@ -118,7 +118,7 @@ function Process() {
           </Paper>
           <Paper style={{ display: 'flex', marginTop: '40px' }} elevation={0}>
             <div style={{ flex: 1, padding: '36px' }}>
-                    <Typography variant="h5" component="div">         
+                    <Typography variant="h3" component="div">         
                     8. QUALITY CHECK
                     </Typography>
                     <Typography variant="body1" component="div">
@@ -139,7 +139,7 @@ function Process() {
                     style={{ width: '40%', height: 'auto' }}
                     />
                 <div style={{ flex: 1, padding: '36px' }}>
-                    <Typography variant="h5" component="div">
+                    <Typography variant="h3" component="div">
                     9. PALLETISING
                     </Typography>
                     <Typography variant="body1" component="div">
@@ -149,7 +149,7 @@ function Process() {
           </Paper>
           <Paper style={{ display: 'flex', marginTop: '40px' }} elevation={0}>
             <div style={{ flex: 1, padding: '36px' }}>
-                    <Typography variant="h5" component="div">         
+                    <Typography variant="h3" component="div">         
                     10. LOGISTICS & SHIPPING
                     </Typography>
                     <Typography variant="body1" component="div">

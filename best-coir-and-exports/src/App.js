@@ -2,9 +2,11 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/design/Header";
 import Footer from "./components/design/Footer";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Container from '@mui/material/Container';
 import Box from "@mui/material/Box";
+import GlobalStyles from '@mui/material/GlobalStyles';
 
 import Home from './components/Home'
 import About from './components/About'
@@ -13,7 +15,6 @@ import Contact from "./components/Contact"
 import Enquire from './components/Enquire'
 import Process from './components/Process'
 
-import GlobalStyles from '@mui/material/GlobalStyles';
 import {theme} from './theme'
 import './assets/styles/styles.scss'
 
@@ -34,9 +35,7 @@ function App() {
    {/* {inputGlobalStyles} */}
     <React.Fragment>
       <Header sections={sections}/>
-      <Box
-        className="app"
-      >
+        <Container className="main_container" maxWidth={false} sx={{ marginTop: 0 }}>
       <Routes>
         <Route exact path="/" element={<Home/>} />
 
@@ -51,8 +50,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
 
       </Routes>
-      </Box>
+      {/* </Box> */}
       <Footer />
+      </Container>
     </React.Fragment>
   </BrowserRouter>
   // </ThemeProvider>

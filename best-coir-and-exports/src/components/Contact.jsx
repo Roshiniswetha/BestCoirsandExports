@@ -15,14 +15,14 @@ function Contact() {
     <React.Fragment>
       <Container maxWidth="sm">
         <Box sx={{ height: '300px', width: '400px' }} >
-          <Typography>Best Coirs and Exports</Typography>
+          <Typography variant="h4">Best Coirs and Exports</Typography>
           <ListItem>
             <ListItemAvatar>
               <Avatar>
                 <LocationOnIcon />
               </Avatar>
             </ListItemAvatar>
-              <Typography>146/A2A Illupunagaram village, 
+              <Typography variant="body2">146/A2A Illupunagaram village, 
                 Udumalpet Tk, Tiruppur,
                 Tamil Nadu - 642202 INDIA
               </Typography>
@@ -33,7 +33,7 @@ function Contact() {
                 <ContactPhoneIcon />
               </Avatar>
             </ListItemAvatar>
-            <Typography>Phone: +9865428094</Typography>
+            <Typography variant="body2">Phone: +9865428094</Typography>
           </ListItem>
           <ListItem>
             <ListItemAvatar>
@@ -41,7 +41,7 @@ function Contact() {
               <MailIcon />
             </Avatar>
             </ListItemAvatar>
-            <Typography>Email: bestcoirsandexports@gmail.com</Typography>
+            <Typography variant="body2">Email: bestcoirsandexports@gmail.com</Typography>
           </ListItem>
         </Box>
       </Container>

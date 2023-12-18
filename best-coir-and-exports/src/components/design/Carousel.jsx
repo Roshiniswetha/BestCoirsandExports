@@ -1,5 +1,5 @@
-// import { Carousel } from 'react-carousel-minimal';
-import { Carousel, Image } from "antd";
+import { Carousel } from 'react-carousel-minimal';
+// import { Carousel, Image } from "antd";
 import { CoconutField, CocoBg, Pieces, GrowBags, CoirBlocks, HangingCoir, CoirFarm, Coconut} from '../../assets/images';
 
 const imageStyle = {
@@ -56,7 +56,7 @@ export default function Carousell() {
         <div style={{
           padding: "0 20px"
         }}>
-          <Carousel autoplay >
+          {/* <Carousel autoplay >
         {carouselData.map((data) => (
           <div>
             <div>
@@ -67,15 +67,17 @@ export default function Carousell() {
             </div>
           </div>
         ))}
-      </Carousel>
-          {/* <Carousel
-            data={data}
+      </Carousel> */}
+          <Carousel
+            className="thumbnails"
+            data={carouselData}
             time={2000}
             width="850px"
             height="500px"
+            caption={false}
             captionStyle={captionStyle}
             radius="10px"
-            slideNumber={true}
+            slideNumber={false}
             slideNumberStyle={slideNumberStyle}
             captionPosition="bottom"
             automatic={true}
@@ -84,15 +86,16 @@ export default function Carousell() {
             pauseIconSize="40px"
             slideBackgroundColor="darkgrey"
             slideImageFit="cover"
-            thumbnails={true}
+            thumbnails={false}
             thumbnailWidth="100px"
             style={{
               textAlign: "center",
               maxWidth: "850px",
               maxHeight: "500px",
               margin: "40px auto",
+              justifyContent: "center"
             }}
-          /> */}
+          />
         </div>
       </div>
     </div>

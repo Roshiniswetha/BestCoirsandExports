@@ -8,6 +8,7 @@
   .header-name{
     width: 100%;
     font-weight: 500;
+    font-size: 2.3rem !important;
   }
   .header_menu {
     &:hover {
@@ -90,7 +91,7 @@
   }
   
   .btn-contained {
-    background: #2189d1;
+    color: #17781c;
     color: rgb(255, 248, 248);
     min-width: 100px;
     border-radius: 5px !important;
@@ -103,7 +104,7 @@
   }
   
   .btn-contained:hover {
-    background: #82bfeb;
+    color: #49824c;
   }
   
   .login-btn {
@@ -112,6 +113,18 @@
     color: #777;
   }
   .login-btn:hover {
-    color: #2189d1;
+    color: #17781c;
+  }
+
+  .MuiTypography-h2{
+    color: #777;
+    font-size: 2.75rem !important;
+  }
+
+  .MuiTypography-body2,  .MuiTypography-h4{
+    color: #777;
   }
   
+  .MuiBox-root{
+    margin-top: 20px;
+  }

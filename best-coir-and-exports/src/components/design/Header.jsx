@@ -27,7 +27,7 @@ const Header = ({sections}) => {
             color="inherit"
             noWrap
             key={section.title}
-            variant="body1"
+            variant="h7"
             href={section.url}
             sx={{ p: 1, flexShrink: 0 }}
             onClick = {()=>navigate(section.url)}

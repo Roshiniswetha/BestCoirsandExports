@@ -16,7 +16,7 @@ function Process() {
                     style={{ width: '40%', height: 'auto' }}
                     />
                 <div style={{ flex: 1, padding: '36px' }}>
-                    <Typography variant="h3" component="div">
+                    <Typography variant="h2" component="div">
                     1. RAW MATERIAL
                     </Typography>
                     <Typography variant="body1" component="div">
